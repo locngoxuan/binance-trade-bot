@@ -6,6 +6,7 @@ services:
     container_name: binance_trader
     working_dir: /app
     volumes:
+      - ./binance_trade_bot:/app/binance_trade_bot
       - ./user.cfg:/app/user.cfg
       - ./supported_coin_list:/app/supported_coin_list
       - ./data:/app/data
